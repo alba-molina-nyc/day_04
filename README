@@ -7,3 +7,26 @@
 to create modules, just add a new file, to be able to use it you can just import it
 
 ![a](modules.png)
+
+## Convert a String to a list
+https://www.askpython.com/python/string/convert-string-to-list-in-python
+
+```python
+names = names.split(', ')
+```
+
+1. String to List of Strings
+
+```python
+#given string
+string1="Python is great"
+ 
+#printing the string
+print("Actual String: ",string1) 
+   
+#gives us the type of string1
+print("Type of string: ",type(string1))  
+ 
+print("String coverted to list :",string1.split()) 
+#prints the list given by split()
+```
