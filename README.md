@@ -2,14 +2,15 @@
 
 ## random module
 
-**what is a module**
+## What is a module
 
 to create modules, just add a new file, to be able to use it you can just import it
 
 ![a](modules.png)
 
 ## Convert a String to a list
-https://www.askpython.com/python/string/convert-string-to-list-in-python
+
+<https://www.askpython.com/python/string/convert-string-to-list-in-python>
 
 ```python
 names = names.split(', ')
@@ -29,4 +30,23 @@ print("Type of string: ",type(string1))
  
 print("String coverted to list :",string1.split()) 
 #prints the list given by split()
+```
+
+### Common Errors with Lists
+
+"index out of range error"
+
+remember list indexing starts at 0 so you can do
+len(list)-1 to get the actual length
+
+### Nested Lists
+
+```python
+fruits = ['strawberries', 'nectarines', 'apples', 'peaches', 'cherries']
+
+vegetables = ['spinach', 'kale', 'tomatoes', 'celery', 'potatoes']
+
+dirty_dozen = [fruits, vegetables]
+
+dirty_dozen[1][1] #to get kale
 ```
