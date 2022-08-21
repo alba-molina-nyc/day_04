@@ -16,4 +16,3 @@ selected_row[horizonal - 1] = "X"
 
 
 
-print(f"{row1}\n{row2}\n{row3}")
