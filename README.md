@@ -54,3 +54,5 @@ dirty_dozen[1][1] #to get kale
 ### Index out of range error
 
 meaning it is beyond the length of lists
+
+### Error -> List indices must be integers or slices not strings (need to convert to integer first)
