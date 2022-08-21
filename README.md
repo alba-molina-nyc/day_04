@@ -50,3 +50,7 @@ dirty_dozen = [fruits, vegetables]
 
 dirty_dozen[1][1] #to get kale
 ```
+
+### Index out of range error
+
+meaning it is beyond the length of lists
