@@ -2,7 +2,7 @@ import random
 
 # random choose between rock paper scissor and then compare choice against my choice based on the rules of rock paper or scissor determine whether won or lost
 
-# TODO: come back and finish
+# TODO: come back and finish debugging bc when you inout # greater than 2 then it gives err
 """Instructions
 Make a rock, paper, scissors game.
 
@@ -46,14 +46,21 @@ def rock_paper_scissors():
       (____)
 ---.__(___)
 '''
-    computer_choice = random.randint(0, 2)
+    game_imgs = [rock, paper, scissors]
     user_choice = int(input('what do you choose? | Type: 0 for 🪨 | 1 for 📜 | 2 for ✂️ | '))
-    print(f'{computer_choice} 🤖')
-    print(f'{user_choice} 👤')
+    print(f'👤 {game_imgs[user_choice]}')
 
-    if user_choice == 0 and computer_choice == 2:
+    computer_choice = random.randint(0, 2)
+    print(f'🤖 Chose: {game_imgs[computer_choice]}')
+
+    # print(f'{computer_choice} 🤖')
+    # print(f'{user_choice} 👤')
+
+    if user_choice >= 3 or user_choice <0:
+        print('❌you typed an invalid number❌')
+    elif user_choice == 0 and computer_choice == 2:
         print(f'👤You win🏆')
-    if computer_choice == 0 and user_choice == 2:
+    elif computer_choice == 0 and user_choice == 2:
         print(f'👤You lose🥈')
     elif computer_choice > user_choice:
         print('you loose🥈')
@@ -61,8 +68,8 @@ def rock_paper_scissors():
         print('you win🏆')
     elif computer_choice == user_choice:
         print('its a draw')
-    else:
-        print('❌you typed an invalid number❌')
+    
+    
  
         
     
