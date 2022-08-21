@@ -46,16 +46,27 @@ def rock_paper_scissors():
       (____)
 ---.__(___)
 '''
+    computer_choice = random.randint(0, 2)
+    user_choice = int(input('what do you choose? | Type: 0 for 🪨 | 1 for 📜 | 2 for ✂️ | '))
+    print(f'{computer_choice} 🤖')
+    print(f'{user_choice} 👤')
 
-random = random.randint(0, 2)
+    if user_choice == 0 and computer_choice == 2:
+        print(f'👤You win🏆')
+    if computer_choice == 0 and user_choice == 2:
+        print(f'👤You lose🥈')
+    elif computer_choice > user_choice:
+        print('you loose🥈')
+    elif user_choice > computer_choice:
+        print('you win🏆')
+    elif computer_choice == user_choice:
+        print('its a draw')
+    else:
+        print('❌you typed an invalid number❌')
+ 
+        
+    
 
-choice = input('what do you choose, Type 0 for ROCK, 1 for PAPER and 2 for SCISSORS ')
-
-print(random, 'random')
-if random == 0 and choice == 0:
-    print('tied both picked rock')
-elif random == 1 and choice == 0:
-    print('you win, you picked {choice} over {random}')
 
 
 
